@@ -1,0 +1,72 @@
+:root {
+  font-family: 'DM Sans', sans-serif;
+  color: #172F2A;
+  background: #F3F2EA;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-optical-sizing: auto;
+  font-weight: 400;
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; min-height: 100vh; background: #F3F2EA; }
+button, input, select { font: inherit; }
+button { cursor: pointer; }
+button:focus-visible, input:focus-visible, select:focus-visible { outline: 3px solid #b8d9a2; outline-offset: 2px; }
+::selection { background: #d8e9cb; color: #173e31; }
+
+/* Keep content comfortable to read across every responsive state. */
+.app-shell p { font-size: 16px; line-height: 1.6; }
+.welcome-subtitle, .card-description, .journey-empty p, .note-panel p,
+.governance-card p, .capacity-copy p, .modal-body > p {
+  font-size: 17px !important;
+  line-height: 1.65;
+}
+.section-heading p, .impact-intro span, .strip-stat span, .capacity-status,
+.journey-item p, .card-meta { font-size: 15px !important; line-height: 1.5; }
+.profile-copy span, .sidebar-footer, .main-footer, .report-summary span:last-child,
+.verification-main span, .report-disclaimer { font-size: 14px !important; line-height: 1.5; }
+.card-content h3, .journey-item h3, .governance-card h3 { font-size: 17px; }
+.verification-main strong { font-size: 17px !important; }
+.report-summary small, .modal-facts small { font-size: 11px !important; }
+.modal-facts strong { font-size: 13px !important; }
+@media (max-width: 560px) {
+  .welcome-subtitle, .card-description, .journey-empty p, .note-panel p,
+  .governance-card p, .capacity-copy p, .modal-body > p { font-size: 16px !important; }
+  .section-heading p, .impact-intro span, .strip-stat span, .capacity-status,
+  .journey-item p, .card-meta { font-size: 14px !important; }
+  .card-content h3, .journey-item h3, .governance-card h3 { font-size: 16px; }
+  .verification-main strong { font-size: 16px !important; }
+}
+
+/* Dashboard-wide readable type scale. */
+.app-shell { font-size: 16px; }
+.brand-caption, .nav-label, .breadcrumb, .profile-copy span,
+.sidebar-footer, .main-footer, .privacy-pill { font-size: 14px !important; }
+.profile-copy strong, .impact-intro strong, .strip-stat strong,
+.capacity-copy h3, .table-title h2 { font-size: 16px !important; }
+.eyebrow { font-size: 14px !important; }
+.nav-link { font-size: 16px !important; }
+.community-title { font-size: 18px !important; }
+.community-copy, .text-action { font-size: 15px !important; }
+.section-heading h2 { font-size: 26px; }
+.view-all { font-size: 15px !important; }
+.search-box input, .filter-wrap select { font-size: 16px !important; }
+.card-content h3, .journey-item h3, .governance-card h3 { font-size: 18px !important; }
+.place-line { font-size: 14px !important; }
+.card-bottom small { font-size: 12px !important; }
+.card-bottom strong { font-size: 15px !important; }
+.card-tag, .pending-badge, .verification-status, .demo-chip { font-size: 13px !important; }
+.capacity-status, .report-summary small, .modal-facts small { font-size: 13px !important; }
+.report-summary strong { font-size: 28px; }
+.modal-body h2 { font-size: 26px; }
+.modal-footnote { font-size: 13px !important; }
+.toast-message { font-size: 15px !important; }
+@media (max-width: 560px) {
+  .section-heading h2 { font-size: 23px; }
+  .community-title { font-size: 17px !important; }
+  .card-bottom strong { font-size: 14px !important; }
+  .report-summary strong { font-size: 24px; }
+  .modal-body h2 { font-size: 23px; }
+}
